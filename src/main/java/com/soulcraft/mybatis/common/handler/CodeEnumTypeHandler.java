@@ -11,6 +11,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * <pre>
+ * 基于状态码的枚举类型映射类
+ * </pre>
+ *
+ * @author Scott
+ * @since 2022年03月22日
+ */
 @MappedTypes(BaseCodeEnum.class)
 public class CodeEnumTypeHandler<E extends Enum<?> & BaseCodeEnum> extends BaseTypeHandler<BaseCodeEnum> {
     private final Class<E> type;

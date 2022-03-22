@@ -11,6 +11,15 @@ import lombok.EqualsAndHashCode;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * <pre>
+ * 数据表对象基础映射类
+ * 定义了通用属性：ID，创建时间，更新时间
+ * </pre>
+ *
+ * @author Scott
+ * @since 2022年03月22日
+ */
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class BaseModel implements Serializable {

@@ -10,6 +10,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * <pre>
+ * 枚举类型自动映射处理类
+ * </pre>
+ *
+ * @author Scott
+ * @since 2022年03月22日
+ */
 public class AutoEnumTypeHandler<E extends Enum<E>> extends BaseTypeHandler<E> {
     private BaseTypeHandler<E> typeHandler;
 
