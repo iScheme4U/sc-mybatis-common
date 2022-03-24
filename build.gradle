@@ -17,15 +17,12 @@ ext {
     set("mybatisPlusVersion", "3.4.2")
     set("lombokVersion", "1.18.20")
     set("springfoxVersion", "3.0.0")
-    set("hutoolVersion", "4.5.7")
     set("slf4jVersion", "1.7.30")
     set("junitVersion", "5.7.0")
-    set("servletApiVersion", "3.1.0")
-    set("validationApiVersion", "2.0.1")
 }
 
 group "com.soulcraft"
-version "0.0.1-SNAPSHOT"
+version "0.0.1"
 
 compileJava {
     sourceCompatibility = "1.8"
