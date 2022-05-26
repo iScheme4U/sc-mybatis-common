@@ -22,7 +22,7 @@ ext {
 }
 
 group "com.soulcraft"
-version "0.0.1"
+version "0.0.2"
 
 compileJava {
     sourceCompatibility = "1.8"
@@ -80,8 +80,8 @@ publishing {
     repositories {
         maven {
             name "mavenLocal"
-            def releasesRepoUrl = "http://localhost:18081/repository/maven-releases/"
-            def snapshotsRepoUrl = "http://localhost:18081/repository/maven-snapshots/"
+            def releasesRepoUrl = "http://localhost:8081/repository/maven-releases/"
+            def snapshotsRepoUrl = "http://localhost:8081/repository/maven-snapshots/"
             allowInsecureProtocol = true
             url = version.endsWith("SNAPSHOT") ? snapshotsRepoUrl : releasesRepoUrl
             credentials {
