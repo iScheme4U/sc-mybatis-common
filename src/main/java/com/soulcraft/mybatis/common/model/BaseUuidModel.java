@@ -17,10 +17,10 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class BaseUidModel extends AbstractBaseModel {
+public class BaseUuidModel extends AbstractBaseModel {
 
-    @ApiModelProperty(value = "UID")
-    @TableId(value = "uid", type = IdType.ASSIGN_UUID)
-    private String uid;
+	@ApiModelProperty(value = "ID")
+	@TableId(value = "id", type = IdType.ASSIGN_UUID)
+	private String id;
 
 }
