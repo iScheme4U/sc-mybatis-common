@@ -14,16 +14,17 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public enum EGender implements BaseCodeEnum {
-    /**
-     * 女
-     */
-    FEMALE(0),
-    /**
-     * 男
-     */
-    MALE(1),
-    ;
-    @EnumValue
-    @JsonValue
-    private int code;
+	/**
+	 * 女
+	 */
+	FEMALE(0, "女"),
+	/**
+	 * 男
+	 */
+	MALE(1, "男"),
+	;
+	@EnumValue
+	@JsonValue
+	private int code;
+	private String desc;
 }

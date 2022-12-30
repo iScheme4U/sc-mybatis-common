@@ -11,4 +11,6 @@ public interface BaseCodeEnum {
      * @return 状态码
      */
     int getCode();
+
+    String getDesc();
 }

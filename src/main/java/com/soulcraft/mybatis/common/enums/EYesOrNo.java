@@ -14,16 +14,17 @@ import lombok.Getter;
 @Getter
 @AllArgsConstructor
 public enum EYesOrNo implements BaseCodeEnum {
-    /**
-     * 否
-     */
-    NO(0),
-    /**
-     * 是
-     */
-    YES(1),
-    ;
-    @EnumValue
-    @JsonValue
-    private int code;
+	/**
+	 * 否
+	 */
+	NO(0, "否"),
+	/**
+	 * 是
+	 */
+	YES(1, "是"),
+	;
+	@EnumValue
+	@JsonValue
+	private int code;
+	private String desc;
 }
