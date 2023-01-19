@@ -2,6 +2,7 @@ package com.soulcraft.mybatis.common.model;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableLogic;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -22,11 +23,15 @@ import java.util.Date;
 @EqualsAndHashCode(callSuper = false)
 public abstract class AbstractBaseModel implements Serializable {
 
-    @ApiModelProperty(value = "创建时间")
-    @TableField(fill = FieldFill.INSERT)
-    private Date createTime;
+	@ApiModelProperty(value = "创建时间")
+	@TableField(fill = FieldFill.INSERT)
+	private Date createTime;
 
-    @ApiModelProperty(value = "更新时间")
-    @TableField(fill = FieldFill.INSERT_UPDATE)
-    private Date updateTime;
+	@ApiModelProperty(value = "更新时间")
+	@TableField(fill = FieldFill.INSERT_UPDATE)
+	private Date updateTime;
+
+	@ApiModelProperty(value = "是否已删除")
+	@TableLogic
+	private Integer deleted;
 }
